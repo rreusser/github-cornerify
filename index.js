@@ -71,7 +71,7 @@ function htmlInjectGithubCorner (opts) {
   opts.class = opts.class === undefined ? 'github-corner' : opts.class;
 
   if (typeof opts.url !== 'string') {
-    opts.url = getRepo(getPkg());
+    opts.url = getRepo(pkg);
   }
 
   if (!opts.url) {
